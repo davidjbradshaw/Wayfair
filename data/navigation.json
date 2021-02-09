@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Orders",
+    "url": "/orders",
+    "children": [
+      {
+        "title": "Recent orders",
+        "url": "/orders/recent",
+        "children": [
+          {
+            "title": "Trade Show Management",
+            "url": "/trade_show/index"
+          }
+        ]
+      },
+      {
+        "title": "Sales Dashboard",
+        "url": "/sales_dashboard/index"
+      },
+      {
+        "title": "Consumer Insights",
+        "url": "/report/dashboard#consumerinsights"
+      },
+      {
+        "title": "Supplier Registration Compliance",
+        "url": "/tools/supplier_registration_compliance/index"
+      },
+      {
+        "title": "Supplier Regeneration Statistics",
+        "url": "/tools/regeneration_stats/index"
+      },
+      {
+        "title": "Fulfillment Performance Diagnostics",
+        "url": "/supplier_dashboard/supplier_fulfillment/index"
+      },
+      {
+        "title": "Lead Time Performance",
+        "url": "/lead_time_performance/index"
+      },
+      {
+        "title": "Customer Incidents Dashboard",
+        "url": "/customer-incidents-dashboard/index"
+      }
+    ]
+  },
+  {
+    "title": "Tickets",
+    "url": "/tickets",
+    "children": [
+      {
+        "title": "Supplier Ticket Inbox",
+        "url": "/app/tickets",
+        "children": [
+          {
+            "title": "Open tickets",
+            "url": "/app/tickets/open"
+          },
+          {
+            "title": "Old tickets",
+            "url": "/app/tickets/old"
+          }
+        ]
+      },
+      {
+        "title": "Agent Manage Tickets",
+        "url": "/tickets/manage"
+      }
+    ]
+  },
+  {
+    "title": "Store Management",
+    "url": "/management",
+    "children": [
+      {
+        "title": "Order Management",
+        "url": "/order_management"
+      },
+      {
+        "title": "Alerts Generation Tool",
+        "url": "/alerts_generator/index"
+      },
+      {
+        "title": "Order Exports",
+        "url": "/order/export/index"
+      },
+      {
+        "title": "Backorder Queue",
+        "url": "/order/backorder_approval/backorder_approval/index"
+      },
+      {
+        "title": "Internal Queue",
+        "url": "/internal_queue/index"
+      },
+      {
+        "title": "Pending Tracking Queue",
+        "url": "/pending_tracking/queue/index"
+      },
+      {
+        "title": "Replacement PO Queue",
+        "url": "/replacement_po_queue/index"
+      },
+      {
+        "title": "System Weather",
+        "url": "/system_weather/index"
+      },
+      {
+        "title": "Pickup Center",
+        "url": "/transportation/pickup_center/calendar"
+      }
+    ]
+  }
+]
