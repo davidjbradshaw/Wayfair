@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Menu 1`] = `
+<div>
+  <div>
+    <button
+      aria-controls="simple-menu"
+      aria-haspopup="true"
+      class="MuiButtonBase-root MuiButton-root MuiButton-text"
+      style="position: absolute; top: 14px; right: 0px; color: rgb(127, 24, 127);"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        <span
+          class="material-icons md-24"
+        >
+          account_circle
+        </span>
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
