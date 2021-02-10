@@ -46,6 +46,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
+const ListItemContainer = (text, index) => (
+  <ListItem button key={text}>
+    <ListItemIcon>
+      {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+    </ListItemIcon>
+    <ListItemText primary={text} />
+  </ListItem>
+)
+
 export default function DrawerContainer({ open, setOpen }) {
   const classes = useStyles()
 
@@ -82,14 +91,7 @@ export default function DrawerContainer({ open, setOpen }) {
           'Tickets',
           'Download Center',
           'Help / Contact Us',
-        ].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        ].map(ListItemContainer)}
       </List>
     </Drawer>
   )
