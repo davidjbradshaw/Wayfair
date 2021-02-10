@@ -1,5 +1,7 @@
+import { render } from '@testing-library/react'
 import Header from './index'
 
 test('renders header', () => {
-  expect(<Header />).toMatchSnapshot()
+  const { container } = render(<Header />)
+  expect(container).toMatchSnapshot()
 })

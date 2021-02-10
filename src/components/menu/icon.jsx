@@ -14,7 +14,7 @@ const Menu = ({ onClick }) => (
     onClick={onClick}
     style={iconStyle}
   >
-    <span class="material-icons md-24">account_circle</span>
+    <span className="material-icons md-24">account_circle</span>
   </Button>
 )
 

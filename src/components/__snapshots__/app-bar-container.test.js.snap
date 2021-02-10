@@ -1,539 +1,139 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders AppBarContanier 1`] = `
-<AppBarContanier
-  open={true}
-  setOpen={
-    Object {
-      "F": [Function],
-      "T": [Function],
-      "__": Object {
-        "@@functional/placeholder": true,
-      },
-      "add": [Function],
-      "addIndex": [Function],
-      "adjust": [Function],
-      "all": [Function],
-      "allPass": [Function],
-      "always": [Function],
-      "and": [Function],
-      "andThen": [Function],
-      "any": [Function],
-      "anyPass": [Function],
-      "ap": [Function],
-      "aperture": [Function],
-      "append": [Function],
-      "apply": [Function],
-      "applySpec": [Function],
-      "applyTo": [Function],
-      "ascend": [Function],
-      "assoc": [Function],
-      "assocPath": [Function],
-      "binary": [Function],
-      "bind": [Function],
-      "both": [Function],
-      "call": [Function],
-      "chain": [Function],
-      "clamp": [Function],
-      "clone": [Function],
-      "comparator": [Function],
-      "complement": [Function],
-      "compose": [Function],
-      "composeK": [Function],
-      "composeP": [Function],
-      "composeWith": [Function],
-      "concat": [Function],
-      "cond": [Function],
-      "construct": [Function],
-      "constructN": [Function],
-      "contains": [Function],
-      "converge": [Function],
-      "countBy": [Function],
-      "curry": [Function],
-      "curryN": [Function],
-      "dec": [Function],
-      "defaultTo": [Function],
-      "descend": [Function],
-      "difference": [Function],
-      "differenceWith": [Function],
-      "dissoc": [Function],
-      "dissocPath": [Function],
-      "divide": [Function],
-      "drop": [Function],
-      "dropLast": [Function],
-      "dropLastWhile": [Function],
-      "dropRepeats": [Function],
-      "dropRepeatsWith": [Function],
-      "dropWhile": [Function],
-      "either": [Function],
-      "empty": [Function],
-      "endsWith": [Function],
-      "eqBy": [Function],
-      "eqProps": [Function],
-      "equals": [Function],
-      "evolve": [Function],
-      "filter": [Function],
-      "find": [Function],
-      "findIndex": [Function],
-      "findLast": [Function],
-      "findLastIndex": [Function],
-      "flatten": [Function],
-      "flip": [Function],
-      "forEach": [Function],
-      "forEachObjIndexed": [Function],
-      "fromPairs": [Function],
-      "groupBy": [Function],
-      "groupWith": [Function],
-      "gt": [Function],
-      "gte": [Function],
-      "has": [Function],
-      "hasIn": [Function],
-      "hasPath": [Function],
-      "head": [Function],
-      "identical": [Function],
-      "identity": [Function],
-      "ifElse": [Function],
-      "inc": [Function],
-      "includes": [Function],
-      "indexBy": [Function],
-      "indexOf": [Function],
-      "init": [Function],
-      "innerJoin": [Function],
-      "insert": [Function],
-      "insertAll": [Function],
-      "intersection": [Function],
-      "intersperse": [Function],
-      "into": [Function],
-      "invert": [Function],
-      "invertObj": [Function],
-      "invoker": [Function],
-      "is": [Function],
-      "isEmpty": [Function],
-      "isNil": [Function],
-      "join": [Function],
-      "juxt": [Function],
-      "keys": [Function],
-      "keysIn": [Function],
-      "last": [Function],
-      "lastIndexOf": [Function],
-      "length": [Function],
-      "lens": [Function],
-      "lensIndex": [Function],
-      "lensPath": [Function],
-      "lensProp": [Function],
-      "lift": [Function],
-      "liftN": [Function],
-      "lt": [Function],
-      "lte": [Function],
-      "map": [Function],
-      "mapAccum": [Function],
-      "mapAccumRight": [Function],
-      "mapObjIndexed": [Function],
-      "match": [Function],
-      "mathMod": [Function],
-      "max": [Function],
-      "maxBy": [Function],
-      "mean": [Function],
-      "median": [Function],
-      "memoizeWith": [Function],
-      "merge": [Function],
-      "mergeAll": [Function],
-      "mergeDeepLeft": [Function],
-      "mergeDeepRight": [Function],
-      "mergeDeepWith": [Function],
-      "mergeDeepWithKey": [Function],
-      "mergeLeft": [Function],
-      "mergeRight": [Function],
-      "mergeWith": [Function],
-      "mergeWithKey": [Function],
-      "min": [Function],
-      "minBy": [Function],
-      "modulo": [Function],
-      "move": [Function],
-      "multiply": [Function],
-      "nAry": [Function],
-      "negate": [Function],
-      "none": [Function],
-      "not": [Function],
-      "nth": [Function],
-      "nthArg": [Function],
-      "o": [Function],
-      "objOf": [Function],
-      "of": [Function],
-      "omit": [Function],
-      "once": [Function],
-      "or": [Function],
-      "otherwise": [Function],
-      "over": [Function],
-      "pair": [Function],
-      "partial": [Function],
-      "partialRight": [Function],
-      "partition": [Function],
-      "path": [Function],
-      "pathEq": [Function],
-      "pathOr": [Function],
-      "pathSatisfies": [Function],
-      "paths": [Function],
-      "pick": [Function],
-      "pickAll": [Function],
-      "pickBy": [Function],
-      "pipe": [Function],
-      "pipeK": [Function],
-      "pipeP": [Function],
-      "pipeWith": [Function],
-      "pluck": [Function],
-      "prepend": [Function],
-      "product": [Function],
-      "project": [Function],
-      "prop": [Function],
-      "propEq": [Function],
-      "propIs": [Function],
-      "propOr": [Function],
-      "propSatisfies": [Function],
-      "props": [Function],
-      "range": [Function],
-      "reduce": [Function],
-      "reduceBy": [Function],
-      "reduceRight": [Function],
-      "reduceWhile": [Function],
-      "reduced": [Function],
-      "reject": [Function],
-      "remove": [Function],
-      "repeat": [Function],
-      "replace": [Function],
-      "reverse": [Function],
-      "scan": [Function],
-      "sequence": [Function],
-      "set": [Function],
-      "slice": [Function],
-      "sort": [Function],
-      "sortBy": [Function],
-      "sortWith": [Function],
-      "split": [Function],
-      "splitAt": [Function],
-      "splitEvery": [Function],
-      "splitWhen": [Function],
-      "startsWith": [Function],
-      "subtract": [Function],
-      "sum": [Function],
-      "symmetricDifference": [Function],
-      "symmetricDifferenceWith": [Function],
-      "tail": [Function],
-      "take": [Function],
-      "takeLast": [Function],
-      "takeLastWhile": [Function],
-      "takeWhile": [Function],
-      "tap": [Function],
-      "test": [Function],
-      "thunkify": [Function],
-      "times": [Function],
-      "toLower": [Function],
-      "toPairs": [Function],
-      "toPairsIn": [Function],
-      "toString": [Function],
-      "toUpper": [Function],
-      "transduce": [Function],
-      "transpose": [Function],
-      "traverse": [Function],
-      "trim": [Function],
-      "tryCatch": [Function],
-      "type": [Function],
-      "unapply": [Function],
-      "unary": [Function],
-      "uncurryN": [Function],
-      "unfold": [Function],
-      "union": [Function],
-      "unionWith": [Function],
-      "uniq": [Function],
-      "uniqBy": [Function],
-      "uniqWith": [Function],
-      "unless": [Function],
-      "unnest": [Function],
-      "until": [Function],
-      "update": [Function],
-      "useWith": [Function],
-      "values": [Function],
-      "valuesIn": [Function],
-      "view": [Function],
-      "when": [Function],
-      "where": [Function],
-      "whereEq": [Function],
-      "without": [Function],
-      "xor": [Function],
-      "xprod": [Function],
-      "zip": [Function],
-      "zipObj": [Function],
-      "zipWith": [Function],
-    }
-  }
-/>
+exports[`renders AppBarContanier (closed) 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary makeStyles-appBar-5 makeStyles-appBarShift-6 mui-fixed MuiPaper-elevation4"
+  >
+    <div
+      class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+    >
+      <button
+        aria-label="open drawer"
+        class="MuiButtonBase-root MuiIconButton-root makeStyles-menuButton-7 makeStyles-hide-8 MuiIconButton-colorInherit MuiIconButton-edgeStart"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+            />
+          </svg>
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+      <header
+        style="color: rgb(127, 24, 127);"
+      >
+        <img
+          alt="Wayfair - Partner Home"
+          src="logo.svg"
+          style="height: 28px; pointer-events: none; margin: 15px 20px 10px;"
+        />
+        <div>
+          <button
+            aria-controls="simple-menu"
+            aria-haspopup="true"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            style="position: absolute; top: 14px; right: 0px; color: rgb(127, 24, 127);"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <span
+                class="material-icons md-24"
+              >
+                account_circle
+              </span>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </header>
+    </div>
+  </header>
+</div>
 `;
 
-exports[`renders AppBarContanier 2`] = `
-<AppBarContanier
-  open={false}
-  setOpen={
-    Object {
-      "F": [Function],
-      "T": [Function],
-      "__": Object {
-        "@@functional/placeholder": true,
-      },
-      "add": [Function],
-      "addIndex": [Function],
-      "adjust": [Function],
-      "all": [Function],
-      "allPass": [Function],
-      "always": [Function],
-      "and": [Function],
-      "andThen": [Function],
-      "any": [Function],
-      "anyPass": [Function],
-      "ap": [Function],
-      "aperture": [Function],
-      "append": [Function],
-      "apply": [Function],
-      "applySpec": [Function],
-      "applyTo": [Function],
-      "ascend": [Function],
-      "assoc": [Function],
-      "assocPath": [Function],
-      "binary": [Function],
-      "bind": [Function],
-      "both": [Function],
-      "call": [Function],
-      "chain": [Function],
-      "clamp": [Function],
-      "clone": [Function],
-      "comparator": [Function],
-      "complement": [Function],
-      "compose": [Function],
-      "composeK": [Function],
-      "composeP": [Function],
-      "composeWith": [Function],
-      "concat": [Function],
-      "cond": [Function],
-      "construct": [Function],
-      "constructN": [Function],
-      "contains": [Function],
-      "converge": [Function],
-      "countBy": [Function],
-      "curry": [Function],
-      "curryN": [Function],
-      "dec": [Function],
-      "defaultTo": [Function],
-      "descend": [Function],
-      "difference": [Function],
-      "differenceWith": [Function],
-      "dissoc": [Function],
-      "dissocPath": [Function],
-      "divide": [Function],
-      "drop": [Function],
-      "dropLast": [Function],
-      "dropLastWhile": [Function],
-      "dropRepeats": [Function],
-      "dropRepeatsWith": [Function],
-      "dropWhile": [Function],
-      "either": [Function],
-      "empty": [Function],
-      "endsWith": [Function],
-      "eqBy": [Function],
-      "eqProps": [Function],
-      "equals": [Function],
-      "evolve": [Function],
-      "filter": [Function],
-      "find": [Function],
-      "findIndex": [Function],
-      "findLast": [Function],
-      "findLastIndex": [Function],
-      "flatten": [Function],
-      "flip": [Function],
-      "forEach": [Function],
-      "forEachObjIndexed": [Function],
-      "fromPairs": [Function],
-      "groupBy": [Function],
-      "groupWith": [Function],
-      "gt": [Function],
-      "gte": [Function],
-      "has": [Function],
-      "hasIn": [Function],
-      "hasPath": [Function],
-      "head": [Function],
-      "identical": [Function],
-      "identity": [Function],
-      "ifElse": [Function],
-      "inc": [Function],
-      "includes": [Function],
-      "indexBy": [Function],
-      "indexOf": [Function],
-      "init": [Function],
-      "innerJoin": [Function],
-      "insert": [Function],
-      "insertAll": [Function],
-      "intersection": [Function],
-      "intersperse": [Function],
-      "into": [Function],
-      "invert": [Function],
-      "invertObj": [Function],
-      "invoker": [Function],
-      "is": [Function],
-      "isEmpty": [Function],
-      "isNil": [Function],
-      "join": [Function],
-      "juxt": [Function],
-      "keys": [Function],
-      "keysIn": [Function],
-      "last": [Function],
-      "lastIndexOf": [Function],
-      "length": [Function],
-      "lens": [Function],
-      "lensIndex": [Function],
-      "lensPath": [Function],
-      "lensProp": [Function],
-      "lift": [Function],
-      "liftN": [Function],
-      "lt": [Function],
-      "lte": [Function],
-      "map": [Function],
-      "mapAccum": [Function],
-      "mapAccumRight": [Function],
-      "mapObjIndexed": [Function],
-      "match": [Function],
-      "mathMod": [Function],
-      "max": [Function],
-      "maxBy": [Function],
-      "mean": [Function],
-      "median": [Function],
-      "memoizeWith": [Function],
-      "merge": [Function],
-      "mergeAll": [Function],
-      "mergeDeepLeft": [Function],
-      "mergeDeepRight": [Function],
-      "mergeDeepWith": [Function],
-      "mergeDeepWithKey": [Function],
-      "mergeLeft": [Function],
-      "mergeRight": [Function],
-      "mergeWith": [Function],
-      "mergeWithKey": [Function],
-      "min": [Function],
-      "minBy": [Function],
-      "modulo": [Function],
-      "move": [Function],
-      "multiply": [Function],
-      "nAry": [Function],
-      "negate": [Function],
-      "none": [Function],
-      "not": [Function],
-      "nth": [Function],
-      "nthArg": [Function],
-      "o": [Function],
-      "objOf": [Function],
-      "of": [Function],
-      "omit": [Function],
-      "once": [Function],
-      "or": [Function],
-      "otherwise": [Function],
-      "over": [Function],
-      "pair": [Function],
-      "partial": [Function],
-      "partialRight": [Function],
-      "partition": [Function],
-      "path": [Function],
-      "pathEq": [Function],
-      "pathOr": [Function],
-      "pathSatisfies": [Function],
-      "paths": [Function],
-      "pick": [Function],
-      "pickAll": [Function],
-      "pickBy": [Function],
-      "pipe": [Function],
-      "pipeK": [Function],
-      "pipeP": [Function],
-      "pipeWith": [Function],
-      "pluck": [Function],
-      "prepend": [Function],
-      "product": [Function],
-      "project": [Function],
-      "prop": [Function],
-      "propEq": [Function],
-      "propIs": [Function],
-      "propOr": [Function],
-      "propSatisfies": [Function],
-      "props": [Function],
-      "range": [Function],
-      "reduce": [Function],
-      "reduceBy": [Function],
-      "reduceRight": [Function],
-      "reduceWhile": [Function],
-      "reduced": [Function],
-      "reject": [Function],
-      "remove": [Function],
-      "repeat": [Function],
-      "replace": [Function],
-      "reverse": [Function],
-      "scan": [Function],
-      "sequence": [Function],
-      "set": [Function],
-      "slice": [Function],
-      "sort": [Function],
-      "sortBy": [Function],
-      "sortWith": [Function],
-      "split": [Function],
-      "splitAt": [Function],
-      "splitEvery": [Function],
-      "splitWhen": [Function],
-      "startsWith": [Function],
-      "subtract": [Function],
-      "sum": [Function],
-      "symmetricDifference": [Function],
-      "symmetricDifferenceWith": [Function],
-      "tail": [Function],
-      "take": [Function],
-      "takeLast": [Function],
-      "takeLastWhile": [Function],
-      "takeWhile": [Function],
-      "tap": [Function],
-      "test": [Function],
-      "thunkify": [Function],
-      "times": [Function],
-      "toLower": [Function],
-      "toPairs": [Function],
-      "toPairsIn": [Function],
-      "toString": [Function],
-      "toUpper": [Function],
-      "transduce": [Function],
-      "transpose": [Function],
-      "traverse": [Function],
-      "trim": [Function],
-      "tryCatch": [Function],
-      "type": [Function],
-      "unapply": [Function],
-      "unary": [Function],
-      "uncurryN": [Function],
-      "unfold": [Function],
-      "union": [Function],
-      "unionWith": [Function],
-      "uniq": [Function],
-      "uniqBy": [Function],
-      "uniqWith": [Function],
-      "unless": [Function],
-      "unnest": [Function],
-      "until": [Function],
-      "update": [Function],
-      "useWith": [Function],
-      "values": [Function],
-      "valuesIn": [Function],
-      "view": [Function],
-      "when": [Function],
-      "where": [Function],
-      "whereEq": [Function],
-      "without": [Function],
-      "xor": [Function],
-      "xprod": [Function],
-      "zip": [Function],
-      "zipObj": [Function],
-      "zipWith": [Function],
-    }
-  }
-/>
+exports[`renders AppBarContanier (open) 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary makeStyles-appBar-1 makeStyles-appBarShift-2 mui-fixed MuiPaper-elevation4"
+  >
+    <div
+      class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+    >
+      <button
+        aria-label="open drawer"
+        class="MuiButtonBase-root MuiIconButton-root makeStyles-menuButton-3 makeStyles-hide-4 MuiIconButton-colorInherit MuiIconButton-edgeStart"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+            />
+          </svg>
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+      <header
+        style="color: rgb(127, 24, 127);"
+      >
+        <img
+          alt="Wayfair - Partner Home"
+          src="logo.svg"
+          style="height: 28px; pointer-events: none; margin: 15px 20px 10px;"
+        />
+        <div>
+          <button
+            aria-controls="simple-menu"
+            aria-haspopup="true"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text"
+            style="position: absolute; top: 14px; right: 0px; color: rgb(127, 24, 127);"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              <span
+                class="material-icons md-24"
+              >
+                account_circle
+              </span>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </header>
+    </div>
+  </header>
+</div>
 `;
