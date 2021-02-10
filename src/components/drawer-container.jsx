@@ -75,13 +75,13 @@ export default function DrawerContainer({ open, setOpen }) {
       <List>
         {[
           'Catalog',
-          'Fulfillment &amp; Logistics',
+          'Fulfillment & Logistics',
           'Reports',
           'Programs',
           'Finance',
           'Tickets',
           'Download Center',
-          'Help/Contact Us',
+          'Help / Contact Us',
         ].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>
