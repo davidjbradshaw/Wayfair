@@ -5,7 +5,7 @@ import DrawerContanier from './drawer-container'
 
 function testDrawerContanier(open) {
   const { container } = render(
-    <DrawerContanier open={true} setOpen={identity} />
+    <DrawerContanier open={open} setOpen={identity} />
   )
   expect(container).toMatchSnapshot()
 
