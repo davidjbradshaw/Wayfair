@@ -78,7 +78,12 @@ function DrawerContainer({ open, setOpen }) {
       }}
     >
       <div className={classes.toolbar}>
-        <IconButton onClick={handleDrawerClose}>
+        <IconButton
+          data-testid="sidebar-close"
+          color="inherit"
+          aria-label="close drawer"
+          onClick={handleDrawerClose}
+        >
           <MenuIcon />
         </IconButton>
       </div>

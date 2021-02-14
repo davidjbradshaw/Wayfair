@@ -1,27 +1,35 @@
-import { render } from '@testing-library/react'
-import identity from 'ramda'
+import { cleanup, fireEvent, render } from '@testing-library/react'
+import { identity } from 'ramda'
 
 import AppBarContanier from './app-bar-container'
 
-function testAppBar(open) {
-  const { container } = render(
-    <AppBarContanier open={open} setOpen={identity} />
-  )
-  expect(container).toMatchSnapshot()
+const testAppBar = (open, setOpen = identity) =>
+  render(<AppBarContanier open={open} setOpen={setOpen} />)
 
-  /*
-   *  I would really like to add a test to press the button and check that setOpen
-   *  gets called here, but it's been over a year since I did much UI React dev.
-   *  In the past I would of used Enzyme. These days TestingLibrary looks more
-   *  interesting but I have not had the chance to use it before today
-   *
-   */
-}
+const snapContainer = (open) =>
+  expect(testAppBar(open).container).toMatchSnapshot()
 
-test('renders AppBarContanier (open)', () => {
-  testAppBar(true)
-})
+describe('AppBarContanier', () => {
+  afterEach(() => {
+    cleanup()
+  })
 
-test('renders AppBarContanier (closed)', () => {
-  testAppBar(false)
+  // eslint-disable-next-line jest/expect-expect
+  test('renders (open)', () => {
+    snapContainer(true)
+  })
+
+  // eslint-disable-next-line jest/expect-expect
+  test('renders (closed)', () => {
+    snapContainer(false)
+  })
+
+  test('setOpen called when clicked', () => {
+    const setOpen = jest.fn(identity)
+    const burgerButton = testAppBar(false, setOpen).getByTestId('sidebar-open')
+
+    expect(setOpen).toHaveBeenCalledTimes(0)
+    fireEvent.click(burgerButton)
+    expect(setOpen).toHaveBeenCalled()
+  })
 })

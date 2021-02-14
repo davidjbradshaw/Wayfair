@@ -1,16 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders AppBarContanier (closed) 1`] = `
+exports[`AppBarContanier renders (closed) 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary makeStyles-appBar-5 makeStyles-appBarShift-6 mui-fixed MuiPaper-elevation4"
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary makeStyles-appBar-5 mui-fixed MuiPaper-elevation4"
   >
     <div
       class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
     >
       <button
         aria-label="open drawer"
-        class="MuiButtonBase-root MuiIconButton-root makeStyles-menuButton-7 makeStyles-hide-8 MuiIconButton-colorInherit MuiIconButton-edgeStart"
+        class="MuiButtonBase-root MuiIconButton-root makeStyles-menuButton-7 MuiIconButton-colorInherit MuiIconButton-edgeStart"
+        data-testid="sidebar-open"
         tabindex="0"
         type="button"
       >
@@ -40,36 +41,34 @@ exports[`renders AppBarContanier (closed) 1`] = `
           src="logo.svg"
           style="height: 28px; pointer-events: none; margin: 15px 20px 10px;"
         />
-        <div>
-          <button
-            aria-controls="simple-menu"
-            aria-haspopup="true"
-            class="MuiButtonBase-root MuiButton-root MuiButton-text"
-            style="position: absolute; top: 14px; right: 0px; color: rgb(127, 24, 127);"
-            tabindex="0"
-            type="button"
+        <button
+          aria-controls="simple-menu"
+          aria-haspopup="true"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
+          style="position: absolute; top: 14px; right: 0px; color: rgb(127, 24, 127);"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
           >
             <span
-              class="MuiButton-label"
+              class="material-icons md-24"
             >
-              <span
-                class="material-icons md-24"
-              >
-                account_circle
-              </span>
+              account_circle
             </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </button>
-        </div>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
       </header>
     </div>
   </header>
 </div>
 `;
 
-exports[`renders AppBarContanier (open) 1`] = `
+exports[`AppBarContanier renders (open) 1`] = `
 <div>
   <header
     class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary makeStyles-appBar-1 makeStyles-appBarShift-2 mui-fixed MuiPaper-elevation4"
@@ -80,6 +79,7 @@ exports[`renders AppBarContanier (open) 1`] = `
       <button
         aria-label="open drawer"
         class="MuiButtonBase-root MuiIconButton-root makeStyles-menuButton-3 makeStyles-hide-4 MuiIconButton-colorInherit MuiIconButton-edgeStart"
+        data-testid="sidebar-open"
         tabindex="0"
         type="button"
       >
@@ -109,29 +109,27 @@ exports[`renders AppBarContanier (open) 1`] = `
           src="logo.svg"
           style="height: 28px; pointer-events: none; margin: 15px 20px 10px;"
         />
-        <div>
-          <button
-            aria-controls="simple-menu"
-            aria-haspopup="true"
-            class="MuiButtonBase-root MuiButton-root MuiButton-text"
-            style="position: absolute; top: 14px; right: 0px; color: rgb(127, 24, 127);"
-            tabindex="0"
-            type="button"
+        <button
+          aria-controls="simple-menu"
+          aria-haspopup="true"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
+          style="position: absolute; top: 14px; right: 0px; color: rgb(127, 24, 127);"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
           >
             <span
-              class="MuiButton-label"
+              class="material-icons md-24"
             >
-              <span
-                class="material-icons md-24"
-              >
-                account_circle
-              </span>
+              account_circle
             </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </button>
-        </div>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
       </header>
     </div>
   </header>
