@@ -1,10 +1,59 @@
-import { render } from '@testing-library/react'
+import { cleanup, fireEvent, render, waitFor } from '@testing-library/react'
+import { identity } from 'ramda'
 
-import Menu from './index'
+import SimpleMenu from './index'
 
-test('renders Menu', () => {
-  const { container } = render(<Menu />)
-  expect(container).toMatchSnapshot()
+describe('Account SimpleMenu', () => {
+  afterEach(() => {
+    cleanup()
+  })
 
-  // TODO add open and close tests for Menu
+  test('renders closed', () => {
+    const { container, getByText, queryByText } = render(<SimpleMenu />)
+    expect(container).toMatchSnapshot()
+
+    expect(getByText('account_circle')).toBeInTheDocument()
+    expect(queryByText('Account Settings')).not.toBeInTheDocument()
+  })
+
+  test('opens', async () => {
+    const { getByTestId, findByText } = render(<SimpleMenu />)
+
+    const button = getByTestId('account-menu-button')
+    expect(button).toMatchSnapshot()
+    fireEvent.click(button)
+
+    const menuItem = await findByText('Account Settings')
+    expect(menuItem).toBeInTheDocument()
+  })
+
+  describe('closes', () => {
+    function closes(text) {
+      test(text, async () => {
+        const { getByTestId, findByText } = render(<SimpleMenu />)
+
+        const button = getByTestId('account-menu-button')
+        fireEvent.click(button)
+
+        const menuItem = await findByText(text)
+        fireEvent.click(menuItem)
+
+        expect(menuItem).toMatchSnapshot()
+
+        await waitFor(() => {
+          expect(menuItem).not.toBeInTheDocument()
+        })
+      })
+    }
+
+    const menuItems = [
+      'Account Settings',
+      'User Management',
+      'My Team',
+      'English (UK)',
+      'Logout',
+    ]
+
+    menuItems.map((item) => closes(item))
+  })
 })

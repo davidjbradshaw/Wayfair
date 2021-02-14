@@ -10,6 +10,7 @@ const iconStyle = {
 
 const Menu = ({ onClick }) => (
   <Button
+    data-testid="account-menu-button"
     aria-controls="simple-menu"
     aria-haspopup="true"
     onClick={onClick}

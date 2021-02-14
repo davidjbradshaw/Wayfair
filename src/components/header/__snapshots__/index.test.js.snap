@@ -14,6 +14,7 @@ exports[`renders header 1`] = `
       aria-controls="simple-menu"
       aria-haspopup="true"
       class="MuiButtonBase-root MuiButton-root MuiButton-text"
+      data-testid="account-menu-button"
       style="position: absolute; top: 14px; right: 0px; color: rgb(127, 24, 127);"
       tabindex="0"
       type="button"

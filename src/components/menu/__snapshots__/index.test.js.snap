@@ -1,29 +1,123 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Menu 1`] = `
+exports[`Account SimpleMenu closes Account Settings 1`] = `
+<li
+  aria-disabled="false"
+  class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button Mui-focusVisible Mui-focusVisible"
+  role="menuitem"
+  tabindex="0"
+>
+  Account Settings
+  <span
+    class="MuiTouchRipple-root"
+  />
+</li>
+`;
+
+exports[`Account SimpleMenu closes English (UK) 1`] = `
+<li
+  aria-disabled="false"
+  class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+  role="menuitem"
+  tabindex="-1"
+>
+  English (UK)
+  <span
+    class="MuiTouchRipple-root"
+  />
+</li>
+`;
+
+exports[`Account SimpleMenu closes Logout 1`] = `
+<li
+  aria-disabled="false"
+  class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+  role="menuitem"
+  tabindex="-1"
+>
+  Logout
+  <span
+    class="MuiTouchRipple-root"
+  />
+</li>
+`;
+
+exports[`Account SimpleMenu closes My Team 1`] = `
+<li
+  aria-disabled="false"
+  class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+  role="menuitem"
+  tabindex="-1"
+>
+  My Team
+  <span
+    class="MuiTouchRipple-root"
+  />
+</li>
+`;
+
+exports[`Account SimpleMenu closes User Management 1`] = `
+<li
+  aria-disabled="false"
+  class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+  role="menuitem"
+  tabindex="-1"
+>
+  User Management
+  <span
+    class="MuiTouchRipple-root"
+  />
+</li>
+`;
+
+exports[`Account SimpleMenu opens 1`] = `
+<button
+  aria-controls="simple-menu"
+  aria-haspopup="true"
+  class="MuiButtonBase-root MuiButton-root MuiButton-text"
+  data-testid="account-menu-button"
+  style="position: absolute; top: 14px; right: 0px; color: rgb(127, 24, 127);"
+  tabindex="0"
+  type="button"
+>
+  <span
+    class="MuiButton-label"
+  >
+    <span
+      class="material-icons md-24"
+    >
+      account_circle
+    </span>
+  </span>
+  <span
+    class="MuiTouchRipple-root"
+  />
+</button>
+`;
+
+exports[`Account SimpleMenu renders closed 1`] = `
 <div>
-  <div>
-    <button
-      aria-controls="simple-menu"
-      aria-haspopup="true"
-      class="MuiButtonBase-root MuiButton-root MuiButton-text"
-      style="position: absolute; top: 14px; right: 0px; color: rgb(127, 24, 127);"
-      tabindex="0"
-      type="button"
+  <button
+    aria-controls="simple-menu"
+    aria-haspopup="true"
+    class="MuiButtonBase-root MuiButton-root MuiButton-text"
+    data-testid="account-menu-button"
+    style="position: absolute; top: 14px; right: 0px; color: rgb(127, 24, 127);"
+    tabindex="0"
+    type="button"
+  >
+    <span
+      class="MuiButton-label"
     >
       <span
-        class="MuiButton-label"
+        class="material-icons md-24"
       >
-        <span
-          class="material-icons md-24"
-        >
-          account_circle
-        </span>
+        account_circle
       </span>
-      <span
-        class="MuiTouchRipple-root"
-      />
-    </button>
-  </div>
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </button>
 </div>
 `;
