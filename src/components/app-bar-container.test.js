@@ -5,7 +5,7 @@ import AppBarContanier from './app-bar-container'
 
 function testAppBar(open) {
   const { container } = render(
-    <AppBarContanier open={true} setOpen={identity} />
+    <AppBarContanier open={open} setOpen={identity} />
   )
   expect(container).toMatchSnapshot()
 

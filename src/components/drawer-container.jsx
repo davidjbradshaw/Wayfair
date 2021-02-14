@@ -1,15 +1,16 @@
-import React from 'react'
-import clsx from 'clsx'
-import { makeStyles } from '@material-ui/core/styles'
 import Drawer from '@material-ui/core/Drawer'
-import List from '@material-ui/core/List'
 import IconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
+import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
-import InboxIcon from '@material-ui/icons/MoveToInbox'
+import { makeStyles } from '@material-ui/core/styles'
 import MailIcon from '@material-ui/icons/Mail'
+import MenuIcon from '@material-ui/icons/Menu'
+import InboxIcon from '@material-ui/icons/MoveToInbox'
+import clsx from 'clsx'
+import PropTypes from 'prop-types'
+import React from 'react'
 
 import { DRAWER_WIDTH } from '../constants'
 
@@ -46,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const ListItemContainer = (text, index) => (
+export const ListItemContainer = (text, index) => (
   <ListItem button key={text}>
     <ListItemIcon>
       {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -55,7 +56,7 @@ const ListItemContainer = (text, index) => (
   </ListItem>
 )
 
-export default function DrawerContainer({ open, setOpen }) {
+function DrawerContainer({ open, setOpen }) {
   const classes = useStyles()
 
   const handleDrawerClose = () => {
@@ -91,8 +92,15 @@ export default function DrawerContainer({ open, setOpen }) {
           'Tickets',
           'Download Center',
           'Help / Contact Us',
-        ].map(ListItemContainer)}
+        ].map((item) => ListItemContainer(item))}
       </List>
     </Drawer>
   )
 }
+
+DrawerContainer.propTypes = {
+  open: PropTypes.bool.isRequired,
+  setOpen: PropTypes.func.isRequired,
+}
+
+export default DrawerContainer

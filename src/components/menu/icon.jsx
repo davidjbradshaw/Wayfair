@@ -1,4 +1,5 @@
 import Button from '@material-ui/core/Button'
+import PropTypes from 'prop-types'
 
 const iconStyle = {
   position: 'absolute',
@@ -17,5 +18,9 @@ const Menu = ({ onClick }) => (
     <span className="material-icons md-24">account_circle</span>
   </Button>
 )
+
+Menu.propTypes = {
+  onClick: PropTypes.func.isRequired,
+}
 
 export default Menu

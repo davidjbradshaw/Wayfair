@@ -1,14 +1,14 @@
-import React from 'react'
-import clsx from 'clsx'
-import { makeStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
 import IconButton from '@material-ui/core/IconButton'
+import { makeStyles } from '@material-ui/core/styles'
+import Toolbar from '@material-ui/core/Toolbar'
 import MenuIcon from '@material-ui/icons/Menu'
-
-import Header from './header'
+import clsx from 'clsx'
+import PropTypes from 'prop-types'
+import React from 'react'
 
 import { DRAWER_WIDTH } from '../constants'
+import Header from './header'
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-export default function AppBarContanier({ open, setOpen }) {
+function AppBarContanier({ open, setOpen }) {
   const classes = useStyles()
 
   const handleDrawerOpen = () => {
@@ -66,3 +66,10 @@ export default function AppBarContanier({ open, setOpen }) {
     </AppBar>
   )
 }
+
+AppBarContanier.propTypes = {
+  open: PropTypes.bool.isRequired,
+  setOpen: PropTypes.func.isRequired,
+}
+
+export default AppBarContanier
