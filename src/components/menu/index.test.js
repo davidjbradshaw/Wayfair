@@ -1,7 +1,24 @@
 import { cleanup, fireEvent, render, waitFor } from '@testing-library/react'
-import { identity } from 'ramda'
 
 import SimpleMenu from './index'
+
+const closes = (text) => {
+  test(text, async () => {
+    const { getByTestId, findByText } = render(<SimpleMenu />)
+
+    const button = getByTestId('account-menu-button')
+    fireEvent.click(button)
+
+    const menuItem = await findByText(text)
+    fireEvent.click(menuItem)
+
+    expect(menuItem).toMatchSnapshot()
+
+    await waitFor(() => {
+      expect(menuItem).not.toBeInTheDocument()
+    })
+  })
+}
 
 describe('Account SimpleMenu', () => {
   afterEach(() => {
@@ -28,24 +45,6 @@ describe('Account SimpleMenu', () => {
   })
 
   describe('closes', () => {
-    function closes(text) {
-      test(text, async () => {
-        const { getByTestId, findByText } = render(<SimpleMenu />)
-
-        const button = getByTestId('account-menu-button')
-        fireEvent.click(button)
-
-        const menuItem = await findByText(text)
-        fireEvent.click(menuItem)
-
-        expect(menuItem).toMatchSnapshot()
-
-        await waitFor(() => {
-          expect(menuItem).not.toBeInTheDocument()
-        })
-      })
-    }
-
     const menuItems = [
       'Account Settings',
       'User Management',
