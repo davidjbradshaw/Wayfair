@@ -1,21 +1,32 @@
-import { render } from '@testing-library/react'
-import identity from 'ramda'
+import { cleanup, fireEvent, render } from '@testing-library/react'
+import { identity } from 'ramda'
 
 import DrawerContanier from './drawer-container'
 
-function testDrawerContanier(open) {
-  const { container } = render(
-    <DrawerContanier open={open} setOpen={identity} />
-  )
-  expect(container).toMatchSnapshot()
+const testDrawerContanier = (open, setOpen = identity) =>
+  render(<DrawerContanier open={open} setOpen={setOpen} />)
 
-  // TODO add close button test
-}
+describe('DrawerContanier', () => {
+  afterEach(() => {
+    cleanup()
+  })
 
-test('renders DrawerContanierContanier (open)', () => {
-  testDrawerContanier(true)
-})
+  test('renders (open)', () => {
+    expect(testDrawerContanier(true).container).toMatchSnapshot()
+  })
 
-test('renders DrawerContanierContanier (closed)', () => {
-  testDrawerContanier(false)
+  test('renders (closed)', () => {
+    expect(testDrawerContanier(false).container).toMatchSnapshot()
+  })
+
+  test('setOpen called when clicked', () => {
+    const setOpen = jest.fn(identity)
+    const burgerButton = testDrawerContanier(true, setOpen).getByTestId(
+      'sidebar-close'
+    )
+
+    expect(setOpen).toHaveBeenCalledTimes(0)
+    fireEvent.click(burgerButton)
+    expect(setOpen).toHaveBeenCalled()
+  })
 })

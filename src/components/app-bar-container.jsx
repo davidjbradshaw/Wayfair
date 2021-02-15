@@ -51,6 +51,7 @@ function AppBarContanier({ open, setOpen }) {
     >
       <Toolbar>
         <IconButton
+          data-testid="sidebar-open"
           color="inherit"
           aria-label="open drawer"
           onClick={handleDrawerOpen}
