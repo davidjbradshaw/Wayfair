@@ -6,22 +6,17 @@ import AppBarContanier from './app-bar-container'
 const testAppBar = (open, setOpen = identity) =>
   render(<AppBarContanier open={open} setOpen={setOpen} />)
 
-const snapContainer = (open) =>
-  expect(testAppBar(open).container).toMatchSnapshot()
-
 describe('AppBarContanier', () => {
   afterEach(() => {
     cleanup()
   })
 
-  // eslint-disable-next-line jest/expect-expect
   test('renders (open)', () => {
-    snapContainer(true)
+    expect(testAppBar(true).container).toMatchSnapshot()
   })
 
-  // eslint-disable-next-line jest/expect-expect
   test('renders (closed)', () => {
-    snapContainer(false)
+    expect(testAppBar(false).container).toMatchSnapshot()
   })
 
   test('setOpen called when clicked', () => {

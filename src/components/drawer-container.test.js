@@ -6,22 +6,17 @@ import DrawerContanier from './drawer-container'
 const testDrawerContanier = (open, setOpen = identity) =>
   render(<DrawerContanier open={open} setOpen={setOpen} />)
 
-const snapContainer = (open) =>
-  expect(testDrawerContanier(open).container).toMatchSnapshot()
-
 describe('DrawerContanier', () => {
   afterEach(() => {
     cleanup()
   })
 
-  // eslint-disable-next-line jest/expect-expect
   test('renders (open)', () => {
-    snapContainer(true)
+    expect(testDrawerContanier(true).container).toMatchSnapshot()
   })
 
-  // eslint-disable-next-line jest/expect-expect
   test('renders (closed)', () => {
-    snapContainer(false)
+    expect(testDrawerContanier(false).container).toMatchSnapshot()
   })
 
   test('setOpen called when clicked', () => {
